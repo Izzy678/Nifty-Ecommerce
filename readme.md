@@ -33,7 +33,7 @@ To set up the development environment:
 3. **Install dependencies using Yarn install** 
 4. **Start the server using `yarn dev`.**
 
-### A short explanation of your approach to handling authentication, authorization, and seeding
+### Approach to handling authentication, authorization, and seeding
 Made Used of Bearer token to handle authentication . Once the user logs in they get two tokens authorization token which holds important information about the logged in user with shorter expiration time and a refresh token which holds just the logged in user Id with a loger expiration time. The refresh token would be used to refreh the authorization token once it expires. 
 For the authorization part , i used two middleware to determine endpoint or route users can access. RequireAdmin middleware protect and limit routes access to only admins while RequireUser middleware limits route access to both authenticated user and admins.
 
